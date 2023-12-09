@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:scaleType="fitXY"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/background_new" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/imageView"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView"
+                        app:srcCompat="@drawable/profile" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User123"
+                        android:layout_marginTop="16dp"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+
+                        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                        app:layout_constraintStart_toStartOf="@+id/imageView2"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:background="@drawable/tab_background">
+
+                    <LinearLayout
+                        android:layout_marginVertical="25dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="15dp"
+                            android:includeFontPadding="false"
+                            android:text="Name"
+                            android:fontFamily="@font/alegreya_sans_medium"
+                            android:textAlignment="center"
+                            android:textColor="@color/pale_red"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/txtEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:includeFontPadding="false"
+                            android:layout_marginBottom="15sp"
+                            android:text="Email Id"
+                            android:fontFamily="@font/alegreya_sans_medium"
+                            android:textAlignment="center"
+                            android:textColor="@color/pale_red"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/txtUserSince"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:includeFontPadding="false"
+                            android:text="User Since"
+                            android:fontFamily="@font/alegreya_sans_medium"
+                            android:textAlignment="center"
+                            android:textColor="@color/pale_red"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginVertical="25dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="13dp"
+                            android:id="@+id/txtNameBox"
+                            android:text="User"
+                            android:textAlignment="center"
+                            android:textSize="20sp"
+                            android:textColor="@color/purple"
+                            android:fontFamily="@font/alegreya_sans_medium"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtEmailBox"
+                            android:text="usertc@gmil.com"
+                            android:textAlignment="center"
+                            android:textSize="20sp"
+                            android:textColor="@color/purple"
+                            android:layout_marginVertical="13dp"
+                            android:fontFamily="@font/alegreya_sans_medium"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtUserSinceBox"
+                            android:text="2023"
+                            android:textAlignment="center"
+                            android:textSize="20sp"
+                            android:textColor="@color/purple"
+                            android:layout_marginTop="13dp"
+                            android:fontFamily="@font/alegreya_sans_medium"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="100dp"
+                    android:id="@+id/btnDelete"
+                    android:textSize="15sp"
+                    android:background="@drawable/button_background"
+                    android:textColor="@color/white"
+                    android:text="Log Out"
+                    app:cornerRadius="10dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

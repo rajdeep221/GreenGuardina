@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GreenGuardian</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="preference_file_name">My Preferences</string>
+
+    <string-array name="city_name">
+        <item>Bhubaneshwar</item>
+        <item>Cuttack</item>
+        <item>Sambalpur</item>
+        <item>Puri</item>
+    </string-array>
+</resources>
